@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI-task</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/dist/boxicons.js"
+        integrity="sha512-Dm5UxqUSgNd93XG7eseoOrScyM1BVs65GrwmavP0D0DujOA8mjiBfyj71wmI2VQZKnnZQsSWWsxDKNiQIqk8sQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+ <!-- <link rel="stylesheet" href="css/rtl.css">  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- 
+    <section id="sidebar" class="close">
+        <div class="side__Logo">
+            <img src="images/logo.png" alt="Logo" class="side__image">
+            <span>PROCOOR</span>
+        </div>
+        <div class="search__bar">
+            <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAd5JREFUSEu11cvLTWEUx/HPGxnIpSiXiZAwcIuSAQpFL2XqUgxIURhQBv4AMiEhDCgk5Q+Q0VsImSAlopTIgFwi9+uz6nl1HO/e5xnssya7zn7O+j5rrd9v7R5djp4u51cHmIB1WInZ+SJ3cAkX8LzkcgMBRuAcVtck+I2L2IRPdaB2wFDcwgx8xUkcxpOcZDJ2YQuG5LOL8L0K0g44iw14hhV4UPHHWbicLjAeB7G7BDAT9/Aj9Xk+ot91sRhX8A2T8GKgw60VHMF2HMWOkgHiPNYnyF7s7wR4jCm5//cLAUvQh2vpGRX9F60VfEQMeRB+FQJGpWpf4w1GdwK8x3AMQ8BKIs5+wCuM6QS4mw01L3ngdkn2pKQFSW03c5uWdQIcSKbZgxPYVgg4kzyyMbUnBLKzE2AqHuJnoUzDYFdz0sqq2412Ktv/KZYnCT6qqGRONtrY7PatJUaLM62r4guO41B2dryPKmNVbMbgnDRmEK6PYdfKtP/lyGygVTVzeJd20b7U0rWYm12/FPH7P1G3ridml/Yids/nrK4bOIa3CB+E0WKdhwpDSeGJv9HEBycg1zEdsQ0W4mU/oQlA5AqThaKm5fmcbhoQ+cal9b4mfz8abVGtJ5tqUSWk64A/OxFWGSrrSC8AAAAASUVORK5CYII=" />
+            <input type="search" placeholder="Search">
+            <span class="searchbar__Text">
+                Ctrl+D
+            </span>
+        </div>
+        <div class="nav__Menu">
+            <p class="nav__Menu__Text">General</p>
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-house"></i>
+                        <span> Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Message</span>
+                        <div class="nav__menu__number">2</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-calendar"></i>
+                        <span>Schedule</span>
+                        <div class="nav__menu__number">3</div>
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </a>
+                </li>
+                <li> <a href="">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Analytics</span>
+                    </a></li>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-newspaper"></i>
+                        <span>News</span></a>
+                </li>
+                <li> <a href="">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <span>Recruitment</span></a></li>
+                <li><a href="">
+                        <i class="fa-regular fa-folder-closed"></i>
+                        <div class="menu__Project">
+                            <span>Project</span>
+                            <i class="fa-solid fa-circle-plus"></i>
+                        </div>
+                    </a></li>
+            </ul>
+            <hr>
+            <p class="nav__Menu__Text">Myspace</p>
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-flag"></i>
+                        <span> Activity</span>
+                    </a>
+
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Shared</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-shield"></i>
+                        <span>Privacy</span>
+                    </a>
+                </li>
+
+            </ul>
+            <hr>
+            <p class="nav__Menu__Text">Support</p>
+            <ul>
+                <li>
+                    <a href="">
+                        <i class="fa-solid fa-gear"></i>
+                        <span> Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-circle-question"></i>
+                        <span>Help!</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-regular fa-comments"></i>
+                        <span>Chat</span>
+                        <div class="nav__menu__number">5</div>
+                    </a>
+                </li>
+
+            </ul>
+            <hr>
+        </div>
+
+    </section> -->
+    <div class="container">
+          
+        <div><section id="sidebar" class="close">
+                <div class="side__Logo">
+                    <img src="images/logo.png" alt="Logo" class="side__image">
+                    <span class="Company__name">PROCOOR</span>
+                </div>
+                <div class="search__bar">
+                    <img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAd5JREFUSEu11cvLTWEUx/HPGxnIpSiXiZAwcIuSAQpFL2XqUgxIURhQBv4AMiEhDCgk5Q+Q0VsImSAlopTIgFwi9+uz6nl1HO/e5xnssya7zn7O+j5rrd9v7R5djp4u51cHmIB1WInZ+SJ3cAkX8LzkcgMBRuAcVtck+I2L2IRPdaB2wFDcwgx8xUkcxpOcZDJ2YQuG5LOL8L0K0g44iw14hhV4UPHHWbicLjAeB7G7BDAT9/Aj9Xk+ot91sRhX8A2T8GKgw60VHMF2HMWOkgHiPNYnyF7s7wR4jCm5//cLAUvQh2vpGRX9F60VfEQMeRB+FQJGpWpf4w1GdwK8x3AMQ8BKIs5+wCuM6QS4mw01L3ngdkn2pKQFSW03c5uWdQIcSKbZgxPYVgg4kzyyMbUnBLKzE2AqHuJnoUzDYFdz0sqq2412Ktv/KZYnCT6qqGRONtrY7PatJUaLM62r4guO41B2dryPKmNVbMbgnDRmEK6PYdfKtP/lyGygVTVzeJd20b7U0rWYm12/FPH7P1G3ridml/Yids/nrK4bOIa3CB+E0WKdhwpDSeGJv9HEBycg1zEdsQ0W4mU/oQlA5AqThaKm5fmcbhoQ+cal9b4mfz8abVGtJ5tqUSWk64A/OxFWGSrrSC8AAAAASUVORK5CYII=" />
+                    <input type="search" placeholder="Search">
+                    <span class="searchbar__Text">
+                        Ctrl+D
+                    </span>
+                </div>
+                <div class="nav__Menu">
+                    <p class="nav__Menu__Text">General</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-house"></i>
+                                <span> Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>Message</span>
+                                <div class="nav__menu__number">2</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-regular fa-calendar"></i>
+                                <span>Schedule</span>
+                                <div class="nav__menu__number">3</div>
+                                <i class="fa-solid fa-circle-plus"></i>
+                            </a>
+                        </li>
+                        <li> <a href="">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Analytics</span>
+                            </a></li>
+                        <li>
+                            <a href="">
+                                <i class="fa-regular fa-newspaper"></i>
+                                <span>News</span></a>
+                        </li>
+                        <li> <a href="">
+                                <i class="fa-solid fa-briefcase"></i>
+                                <span>Recruitment</span></a></li>
+                        <li><a href="">
+                                <i class="fa-regular fa-folder-closed"></i>
+                                <div class="menu__Project">
+                                    <span>Project</span>
+                                    <i class="fa-solid fa-circle-plus"></i>
+                                </div>
+                            </a></li>
+                    </ul>
+                    <hr>
+                    <p class="nav__Menu__Text">Myspace</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa-regular fa-flag"></i>
+                                <span> Activity</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-users"></i>
+                                <span>Shared</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-shield"></i>
+                                <span>Privacy</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <hr>
+                    <p class="nav__Menu__Text">Support</p>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-gear"></i>
+                                <span> Setting</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-regular fa-circle-question"></i>
+                                <span>Help!</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-regular fa-comments"></i>
+                                <span>Chat</span>
+                                <div class="nav__menu__number">5</div>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <hr>
+                </div>
+
+            </section>
+        </div>
+        <!-- all left side -->
+        <div id="rightbar">
+
+            <!-- navbar -->
+            <div class="navbar">
+                <nav class="navbar__Menu">
+                    <ul class="left__list">
+                        <li><a href="#">Documents</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Payslip</a></li>
+                        <li><a href="#">Report</a></li>
+
+                    </ul>
+
+                    <ul>
+                        <li><a href="#"><i class="fa-solid fa-language"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-envelope"></i></a></li>
+                        <li><a href="#"><i class="fa-regular fa-comment-dots"></i></a></li>
+                        <li><a href="#"><img src="images/profile.png" alt="" class="profile__img"> </a>
+                        </li>
+                        <li><i class="fa-solid fa-chevron-down imgicon"></i></li>
+                    </ul>
+                </nav>
+                <hr>
+            </div>
+
+            <!-- numbers bar -->
+            <div class="numbers__group">
+                <div class="number__Views">
+                    <p class="number__text">Views</p>
+                    <p class="num__value" data-goal ="7265">0</p>
+                </div>
+                <div class="number__Views">
+                    <p class="number__text">Visits</p>
+                    <p class="num__value" data-goal="3671">0</p>
+                </div>
+                <div class="number__Views">
+                    <p class="number__text">New Users</p>
+                    <p class="num__value" data-goal="156">0</p>
+                </div>
+                <div class="number__Views">
+                    <p class="number__text">Active Users</p>
+                    <p class="num__value" data-goal ="2318"> 0</p>
+                </div>
+
+            </div>
+
+            <!-- form and table -->
+            <div class="form__table">
+                <div class="form">
+                    <form id="form" action="">
+                        <h3> New Pay Cycle</h3>
+                        <div class="input__control">
+                            <label for="username">Name<span class="required_star">*</span></label>
+                            <input type="text" id="username" name="username" placeholder="Write Name">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input__control">
+                            <label for="Description">Description<span class="required_star">*</span></label>
+                            <input type="text" id="Description" name="Description" placeholder="Write Description">
+                            <div class="error"></div>
+                        </div>
+                        <div class="input__control">
+                            <!-- <input type="text" id="Date" name="Date" placeholder="Monthly"> -->
+                            
+                            <input list="fruits" id="Date" name="fruit" placeholder="Monthly">
+                            <datalist id="fruits">
+                              <option value="Jan">
+                              <option value="Fab">
+                              <option value="Mar">
+                              <option value="Apr">
+                              
+                            </datalist>
+                            <div class="error"></div>
+                        </div>
+                        <div class="input__control">
+                            <label for="Cut-off Date">Cut-off Date<span class="required_star">*</span></label>
+                            <input type="date" id="Cut-off-Date" name="Cut-off Date" placeholder="Select date">
+                            <div class="error"></div>
+                        </div>
+                        <button type="submit" id="submit">Save</button>
+                    </form>
+
+                </div>
+                <div class="table">
+                    <table class="content__table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Phone Number</th>
+                                <th>CV</th>
+                                <th>Created Date</th>
+                                <th>Stages</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- user 1 -->
+                            <tr>
+                                <td>
+                                    <div>Pristia Candra</div>
+                                    <div class="email__table">lincoln@unpixel.com</div>
+                                </td>
+                                <td>
+                                    08092139441
+                                </td>
+                                <td>
+                                    <div class="cv-container">
+                                        <span>CV.pdf</span>
+                                        <i class="fa-solid fa-file-arrow-down"></i>
+                                    </div>
+                                </td>
+                                <td>01 Mar 2023</td>
+                                <td>Applied</td>
+
+                            </tr>
+                            <!-- user 2 -->
+                            <tr>
+                                <td>
+                                    <div>Hanna Baptista</div>
+                                    <div class="email__table">hanna@unpixel.com</div>
+                                </td>
+                                <td>
+                                    08092139441
+                                </td>
+                                <td>
+                                    <div class="cv-container">
+                                        <span>-</span>
+
+                                    </div>
+                                </td>
+                                <td>01 Mar 2023</td>
+                                <td>Screening</td>
+
+                            </tr>
+                            <!-- user 3 -->
+                            <tr>
+                                <td>
+                                    <div>Miracle Geidt</div>
+                                    <div class="email__table">miracle@unpixel.com</div>
+                                </td>
+                                <td>
+                                    08092139441
+                                </td>
+                                <td>
+                                    <div class="cv-container">
+                                        <span>CV.pdf</span>
+                                        <i class="fa-solid fa-file-arrow-down"></i>
+                                    </div>
+                                </td>
+                                <td>01 Mar 2023</td>
+                                <td>1st Interview</td>
+
+                            </tr>
+                            <!-- user 4 -->
+                            <tr>
+                                <td>
+                                    <div>Rayna Torff</div>
+                                    <div class="email__table">rayna@unpixel.com</div>
+                                </td>
+                                <td>
+                                    08092139441
+                                </td>
+                                <td>
+                                    <div class="cv-container">
+                                        <span>-</span>
+
+                                    </div>
+                                </td>
+                                <td>01 Mar 2023</td>
+                                <td>2nd Interview</td>
+
+                            </tr>
+                            <!-- user 5 -->
+                            <tr>
+                                <td>
+                                    <div>Giana Lipshutz</div>
+                                    <div class="email__table">giana@unpixel.com</div>
+                                </td>
+                                <td>
+                                    08092139441
+                                </td>
+                                <td>
+                                    <div class="cv-container">
+                                        <span>-</span>
+
+                                    </div>
+                                </td>
+                                <td>01 Mar 2023</td>
+                                <td>Hiring</td>
+
+                            </tr>
+                            <!-- user 6 -->
+
+                            <tr>
+                                <td>
+                                    <div>James George</div>
+                                    <div class="email__table">james@unpixel.com</div>
+                                </td>
+                                <td>
+                                    08092139441
+                                </td>
+                                <td>
+                                    <div class="cv-container">
+                                        <span>CV.pdf</span>
+                                        <i class="fa-solid fa-file-arrow-down"></i>
+                                    </div>
+                                </td>
+                                <td>01 Mar 2023</td>
+                                <td>Hiring</td>
+
+                            </tr>
+                            <!-- user 7 -->
+
+                            <tr>
+                                <td>
+                                    <div>Jordyn George</div>
+                                    <div class="email__table">jordyn@unpixel.com</div>
+                                </td>
+                                <td>
+                                    08092139441
+                                </td>
+                                <td>
+                                    <div class="cv-container">
+                                        <span>CV.pdf</span>
+                                        <i class="fa-solid fa-file-arrow-down"></i>
+                                    </div>
+                                </td>
+                                <td>01 Mar 2023</td>
+                                <td>Rejected</td>
+
+                            </tr>
+                            <!-- user 8 -->
+
+                            <tr>
+                                <td>
+                                    <div>Skylar Herwitz</div>
+                                    <div class="email__table">skylar@unpixel.com</div>
+                                </td>
+                                <td>
+                                    08092139441
+                                </td>
+                                <td>
+                                    <div class="cv-container">
+                                        <span>CV.pdf</span>
+                                        <i class="fa-solid fa-file-arrow-down"></i>
+                                    </div>
+                                </td>
+                                <td>01 Mar 2023</td>
+                                <td>Screening</td>
+
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
